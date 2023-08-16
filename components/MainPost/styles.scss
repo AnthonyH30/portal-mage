@@ -1,16 +1,17 @@
 @import '@/styles/mixins.scss';
 
 .poster{
-    width: 75%;
+    width: 72.5%;
     @include center;
     flex-direction: column;
     margin-inline: auto;
     position: relative;
     box-shadow: 0rem .2rem 10rem .2rem #808080;
+    max-width: 120rem;
 
     &--img{
         width: 100%;
-        max-height: 500px;
+        max-height: 50rem;
         object-fit: cover;
     }
 
@@ -43,10 +44,11 @@
             list-style-type: none;
 
             .tag{
-                border: 1px solid white;
+                border: .1rem solid white;
                 border-radius: .8rem;
                 padding: .3rem 1rem;
-                backdrop-filter: blur(.2rem);
+                backdrop-filter: blur(.8rem);
+                cursor: pointer;
             }
         }
     }

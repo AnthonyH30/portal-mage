@@ -1,0 +1,61 @@
+@import '@/styles/mixins.scss';
+
+.blogCards{
+    width: 75%;
+    max-width: 120rem;
+    @include center;
+    flex-wrap: wrap;
+    margin-inline: auto;
+    margin-top: 7rem;
+    gap: 2.5rem;
+
+    &--card{
+        width: 30rem;
+
+        &-img{
+            height: 20rem;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        &-content{
+            display: flex;
+            flex-direction: column;
+            gap: .7rem;
+
+            .date{
+                font-size: 1.2rem;
+                font-weight: 700;
+                margin-top: 2rem
+            }
+
+            .title-container{
+                @include center;
+                justify-content: space-between;
+            }
+
+            .title{
+                font-size: 2rem;
+            }
+
+            .subtitle{
+                font-size: 1.4rem;
+                font-weight: 400;
+            }
+
+            .tags{
+                display: flex;
+                gap: 1rem;
+                list-style: none;
+
+                .tag{
+                    border: .1rem solid #000000;
+                    padding: .2rem .6rem;
+                    border-radius: .8rem;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+}
