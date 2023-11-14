@@ -1,0 +1,38 @@
+@import '../../styles/mixins.scss';
+
+.municipality-wrapper{
+    @include center;
+    width: 100%;
+
+    ul{
+        list-style: none;
+        @include center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        max-width: 100rem;
+
+        .municipality--card{
+            border-radius: .8rem;
+            overflow: hidden;
+        }
+
+        .card--image{
+            width: 27rem;
+            height: 15rem;
+            object-fit: contain;
+            overflow: hidden;
+            img{
+                width: 100%;
+            }
+        }
+
+        .card--content{
+            width: 27rem;
+            height: 3.5rem;
+            @include center;
+            background-color: #0f1626;
+            color: #fff;
+            font-size: 1.3rem;
+        }
+    }
+}

@@ -8,6 +8,12 @@
     color: #0f1626;
     padding-inline: 5%;
 
+    a{
+        font-size: 1.6rem;
+        color: #0f1626;
+        text-decoration: none;
+    }
+
     &--nav{
         display: flex;
         align-items: center;
@@ -24,6 +30,7 @@
             img{
                 width: 3rem;
                 height: 3rem;
+                margin-right: .5rem;
             }
             &:first-child{
                 font-size: 1.9rem;
